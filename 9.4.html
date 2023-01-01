@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7.2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-bottom: 3%;
+        }
+        .container{
+            
+            margin-top: 10px;
+            margin: auto;
+           
+        }
+        .box1{
+            margin-left: 10%;
+            width:37%;
+            height: 500px;
+            float: left;
+            background: url('/img/me.jpg') no-repeat center center/cover;
+            
+            
+            
+        }
+        .box2 h2, .box3 h2{
+            padding-top:0 ;
+            text-align: center;
+            font-style:italic;
+            margin-bottom:2%;
+        }
+        .box2 p{
+           
+            margin-top: 0%;
+            line-height: 1.6em;
+
+        }
+        .box2{
+             width:40% ;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: beige;
+            margin-left: 50%;
+            margin-bottom: 1.3%;
+            padding-top:0.001%;
+            padding-bottom:1%;
+           
+            
+            
+        }
+        .box3{
+            display:block;
+            width:40%;
+            margin-left: 50%;
+            background-color: blanchedalmond;
+            padding-top: 0.1%;
+            padding-bottom: 0.00003%;
+
+           
+         }
+         .cards{
+            display: flex;
+            float: left;
+            /* width: 50%; */
+            margin-left: 20%;
+           
+          
+        }
+        #ramah{
+            background-color:beige;
+            margin-right: 15%;
+            width: 30%;
+            
+        }
+        #tap{
+            background-color: gray;
+            float: left;
+            width: 40%;
+           
+           
+        }
+        #ramah,#tap{
+            width: 300px;
+            text-align: center;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            line-height: 1.6em;
+            box-shadow: 10px 10px teal;
+        }
+     
+            
+         
+         .icon{
+            margin: 5% 2% 5%;
+         }
+         
+        
+       
+        .navi{
+            display: flex;
+            font-family: Arial, Helvetica, sans-serif;
+            list-style: none;
+            border: 1px solid #000;
+            border-radius: 7px;
+            width: 850px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 25px;
+            position: sticky;
+            top:0;
+            z-index: 1;
+            
+            
+           
+        }
+        .navi li{
+           
+            margin-right: 20px;
+            padding: 0 5px;
+            
+           
+            
+        }
+        a{
+            text-decoration: none;
+            color:black;
+          
+        }
+        a:hover{
+        color: brown;
+        
+        }
+        .three {
+           margin-left: 450px;
+        color: #000;
+        /* background-color:none; */
+        border: 3px solid red;
+        text-decoration:none;
+       
+        background-color: white;
+        cursor: pointer;
+    }
+    .three:hover{
+        color: #fff;
+        background-color:red;
+        border: 3px solid red;
+        text-decoration:none;
+       
+    }
+    @media (max-width:900px){
+            .box1, .box2, .box3{
+                display:inline-block;
+                width: 80%;
+                margin: 0;
+                
+            }
+            .box2, .box3{
+                padding:8% ;
+                margin-left:10%;
+                margin-top: 15px;
+            }
+            .box1{
+                display: inline-block;
+                width: 300px;
+                margin-left:30%;
+            }
+            .cards{
+                display: inline-block;
+                margin: 10px 0;
+                
+            }
+            #ramah,#tap{
+                width: 100%;
+            }
+            .navi{
+                display: none;
+            }
+         } 
+    </style>
+</head>
+<body>
+  <header>
+    <h1>mika givner</h1>
+    <h3>my name is mika, im 22 and working as aprogrammer</h3>
+  </header>
+  
+    <ul class="navi">
+        <li><a href="">home</a> </li>
+        <li> <a href="">about</a> </li>
+        <li><a href="">contant</a> </li>
+        <li><a href="">photos</a> </li>
+        <button class="three" type="button">click here</button>
+    </ul>
+    
+</div>  
+  <container>
+    <div class="box1">
+       
+
+    </div>
+    <div class="box2">
+        <h2>about</h2>
+        <p>hey, my name is Mika and i would like to tell you about my last summer at<span class="icon"> Ramah summer camp in NY.</span> it was a lovely but challenging experience with many people who takes a part in it.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur et voluptatibus sit repudiandae minus quam dicta temporibus ducimus sapiente hic!</p>
+    </div>
+    <div class="box3">
+        <h2>links</h2>
+        <div class="icon"> <a href="https://www.google.com/gmail/about/"><img style="width: 40px;" src="./img/gmail_icon.webp" alt="gmail icon"></a>mikagivner123@gmail,com</div>
+       <div class="icon"> <a href="https://www.instagram.com/"><img style="width: 40px;" src="./img/ins_icon.png" alt="instegram icon"></a> mika_givner</div>
+        <div class="icon"><a href="https://github.com/"><img style="width: 40px;" src="./img/gitPIC.png" alt="giticon"></a>mikaGivner</div>
+    
+    </div>
+  </container>
+  <div class="cards">
+    
+    <div id="ramah">
+        <img src="./img/ramah.jpg" alt="try"/>
+        <h2>Ramah Nayack</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum laboriosam dolorem mollitia autem porro, officia ad id impedit in provident fugit est explicabo libero, ex eos, optio modi molestias soluta.</p>
+      </div>
+      <div id="tap">
+        <img src="./img/tap.jpg" alt="try"/>
+        <h2>TapDance</h2>
+        <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<span style="font-weight: bold;"> Nostrum esse obcaecati asperiores</span> nulla qui, atque repellendus omnis molestiae praesentium reprehenderit?</span>
+      </div>
+  </div>
+
+</body>
+</html>
